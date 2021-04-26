@@ -29,6 +29,7 @@ public:
     bool Insert(int Value);
     bool Delete(int Value);
     void Print();
+    int Count();
 
 private:
     // Helper functions
@@ -37,6 +38,7 @@ private:
     bool DeleteNode(Node * &Tree);
     bool DeleteHelper(int Value, Node * &Tree);
     void PrintHelper(Node * Tree);
+    int CountHelper(Node *Tree);
 
     // Tree pointer
     Node *Root;

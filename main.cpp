@@ -37,6 +37,7 @@ int main() {
     }
 
     tree3.Print();
+    cout << tree3.Count();
 
     return 0;
 

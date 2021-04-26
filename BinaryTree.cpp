@@ -114,3 +114,35 @@ void BinaryTree::Print()
     PrintHelper(Root);
     cout << endl;
 }
+
+int BinaryTree::CountHelper(Node *Tree) {
+
+    int count = 1;
+
+    if (Tree == NULL) {
+
+        return 0;
+
+    }
+
+    if (Tree->Left != NULL) {
+
+        count += CountHelper(Tree->Left);
+
+    }
+
+    if (Tree->Right != NULL) {
+
+        count += CountHelper(Tree->Right);
+
+    }
+
+    return count;
+
+}
+
+int BinaryTree::Count() {
+
+    return CountHelper(Root);
+
+}
