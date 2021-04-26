@@ -8,8 +8,6 @@ int main() {
 
     for (int i = 0; i < 10; i++) {
 
-//        tree.Insert(rand() % 10);
-
         if (tree.Insert(rand() % 10)) {
             cout << "Value successfully added to tree." << endl;
         } else {
@@ -19,6 +17,26 @@ int main() {
     }
 
     tree.Print();
+
+    BinaryTree tree2;
+
+    for (int i = 0; i < 10; i++) {
+
+        tree2.Insert(i);
+
+    }
+
+    tree2.Print();
+
+    BinaryTree tree3;
+
+    for (int i = 9; i >= 0; i--) {
+
+        tree3.Insert(i);
+
+    }
+
+    tree3.Print();
 
     return 0;
 
