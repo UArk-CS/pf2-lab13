@@ -30,6 +30,7 @@ public:
     bool Delete(int Value);
     void Print();
     int Count();
+    int Height();
 
 private:
     // Helper functions
@@ -39,6 +40,7 @@ private:
     bool DeleteHelper(int Value, Node * &Tree);
     void PrintHelper(Node * Tree);
     int CountHelper(Node *Tree);
+    int HeightHelper(Node *Tree);
 
     // Tree pointer
     Node *Root;

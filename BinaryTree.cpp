@@ -146,3 +146,21 @@ int BinaryTree::Count() {
     return CountHelper(Root);
 
 }
+
+int BinaryTree::HeightHelper(Node *Tree) {
+
+    if (Tree == NULL) {
+
+        return 0;
+
+    }
+
+    return (1 + max(HeightHelper(Tree->Left), HeightHelper(Tree->Right)));
+
+}
+
+int BinaryTree::Height() {
+
+    return HeightHelper(Root);
+
+}
