@@ -88,6 +88,9 @@ void BinaryTree::PrintHelper(Node * Tree)
     // Check terminating condition
     if (Tree != NULL)
     {
+
+        cout << "(";
+
         // Print left subtree
         PrintHelper(Tree->Left);
 
@@ -96,6 +99,9 @@ void BinaryTree::PrintHelper(Node * Tree)
 
         // Print right subtree
         PrintHelper(Tree->Right);
+
+        cout << ")";
+
     }
 }
 
